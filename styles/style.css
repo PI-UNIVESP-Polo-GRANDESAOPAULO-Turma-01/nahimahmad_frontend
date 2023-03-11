@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin:0 ;
+}
+.container{
+    max-width: 1440px;
+    background-color:#32416F;
+    height: 200px;
+  
+}
+.sou-aluno-adm{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding-top:50px;
+    font-size: 20px;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.sou-aluno{
+    border:1px solid white;
+    padding:10px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+.sou-adm{
+    border:1px solid white;
+    padding:12px;
+    padding-left: 90px; 
+    padding-right: 90px;
+    border-radius: 20px;
+    text-align: center;
+}
+.sou-aluno:hover{
+    background-color: white;
+    color:#32416F;
+}
+.sou-adm:hover{
+    background-color: white;
+    color:#32416F;
+}
+
+
+.login{
+    height: 490px;
+    width: 556px;
+    background-color:#f8f8f8;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #888888;
+    margin-top: 10px;
+
+}
+
+.logo{
+    text-align: center;
+    padding-top: 10px;
+}
+.imagem{
+   width: 100px;
+   height: 100px;
+   margin:auto;
+   
+}
+
+.card-content{
+    
+   text-align:center;
+   
+}
+.card-content-area{
+   padding: 10px;
+   display:block;
+   gap:10px;
+   margin:auto;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+   
+}
+
+input{
+    padding: 10px;
+    outline: none;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:0px 0px 10px #888888;  
+}
+
+a{
+   text-decoration: none;
+   color:#32416F;
+   font-weight:bold ;
+   display: block;
+   padding-bottom: 2px;
+}
+
+
+button{
+    padding: 12px;
+    padding-left:70px ;
+    padding-right: 70px;
+    border-radius: 19px;
+    color:white;
+    background-color: rgb(36, 36, 247);
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 50px;
+    
+}
