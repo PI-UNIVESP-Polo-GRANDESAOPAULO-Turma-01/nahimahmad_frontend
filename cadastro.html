@@ -1,89 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="imagens/fav_icon.png" type="image/x-icon" />
+
   <link rel="stylesheet" href="/styles/cadastro.css" />
-  <title>cadastro</title>
+  
+  <title>Novo Cadastro</title>
+
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="links-image">
-        <img class="imagem-cima" src="/styles/Logo.png">
-        <div class="links">
-          <a src="">Cadastrar</a>
-          <a src="">Pesquisar</a>
-          <a src="">Dashboard</a>
-          <a class="photo-login">
-            <div class="conteudo">P</div>
-          </a>
-        </div>
-      </div>
-    </header>
+<header>
 
-    <div class="form">
-      <h1 class="text">Cadastro de novos alunos</h1>
+  <nav class="cabecalho_container">
 
-      <div class="estrutura">
-        <form class="label-input">
+    <img class="logo" src="imagens/logo.png" alt="Logo do colégio Nahim Ahmad">
 
-          <div class="line-one">
-           <div> 
-             <label>Aluno:</label>
-             <input type="text">
-           </div>
-           <div> 
-             <label>E-mail:</label>
-             <input type="text">
-           </div>
-          </div>
-        
-          <div class="line-two">
-            <div> 
-              <label>Matricula:</label>
-              <input type="text">
-            </div>
-            <div> 
-              <label>N-de serie:</label>
-              <input type="text">
-            </div>
-          </div>
-        
-          <div class="line-three"> 
-            <div> 
-              <label>Data de entrega:</label>
-              <input type="text">
-            </div>
-            <div> 
-              <label>Conservação:</label>
-              <input type="text">
-            </div>
-          </div>
-        
-          <button class="finalizar">Concluido</button>
-        </form>
-      </div>
-
+    <div class="links">
+      <a href="sobre.html" class="cabecalho_sobre">Sobre</a>
+      <a href="cadastro.html" class="cabecalho_cadastro">Cadastrar</a>
+      <a href="buscar.html" class="cabecalho_buscar">Buscar</a>
+      <a href="perfil.html" class="cabecalho_perfil">Perfil</a>
     </div>
 
+  </nav>
 
-    <footer class="rodape">
-      <div class="">
-
+</header>
+  <div class="container">
+    <div class="estrutura_1">
+      <h3 class="new-register-form-title">
+        Novo Cadastro
+      </h3>
+      
+      <div class="estrutura_2">
+        <div class="new-register-form">
+          <form >
+            <fieldset class="grupo">
+              <div class="campo">
+                <label for="aluno">Aluno</label>
+                <input type="text" placeholder="Nome do Aluno" required>
+              </div>
+              <div class="campo">
+                <label for="e-mail">E-mail</label>
+                <input type="email" placeholder="emaildoaluno@aqui.com" required>
+              </div>
+            </fieldset>
+            <fieldset class="grupo">
+              <div class="campo">
+                <label for="matrícula">Matrícula</label>
+                <input type="text" placeholder="012456789" required>
+              </div>
+              <div class="campo">
+                <label for="n_de_serie">Nº de série</label>
+                <input type="text" placeholder="012456789" required>
+              </div>
+            </fieldset>
+            <fieldset class="grupo">
+              <div class="campo">
+                <label for="dt_entrega">Data de entrega</label>
+                <input type="date" placeholder="DD/MM/AAAA" required>
+              </div>
+              <div class="campo">
+                <label for="conservacao">Conservação</label>
+                <select id="conservacao" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Ótimo</option>
+                  <option>Bom</option>
+                  <option>Ruim</option>
+                </select>
+              </div>
+            </fieldset>
+            <div class="button">
+            
+              <a href="#" class="button_a">Cadastrar</a>
+            
+          </div>
+          </form>
+        </div>
       </div>
-    </footer>
-  </div>
-
-
-
+    </div>
 
   </div>
 
 
+<footer class="footer">
+  <div>
+    <div class="footer_endereco">
+      <p>Avenida Esperança, nº 191 - Centro, Guarulhos/SP</p>
+    </div>
+    <div class="footer_direitos"></div>
+        <p>Todos os direitos reservados © 2023</p>
+    </div>
+  </div>
+
+  <div class="footer_redes">
+    <p>Nos siga nas redes sociais:</p>
+    <a href="https://www.facebook.com/colegioahmad" class="facebook" target="_blank"><img src="imagens/facebook.png" alt="logo do facebook" width="30px" height="30px"></a>
+    <a href="https://www.instagram.com/colegioahmad/" class="instagram" target="_blank"><img src="imagens/instagram.png" alt="logo do instagram" width="30px" height="30px"></a>
+    <a href="https://twitter.com/colegioahmad" class="twitter" target="_blank"><img src="imagens/twitter.png" alt="logo do twitter" width="30px" height="30px"></a>
+    <a href="https://www.youtube.com/colegioahmad" class="youtube" target="_blank"><img src="imagens/youtube.png" alt="logo do youtube" width="30px" height="30px"></a>   
+  </div>
+</footer>
 
 </body>
 
