@@ -40,7 +40,7 @@
               <label for="password">Senha</label>
               <input type="password" id="password" autocomplete="off">
               <i class="bi bi-eye" id="btn-password" onclick="mostrarSenha()"></i>
-              <script src="script.js"></script>
+
           </div>
           
           <ul>
@@ -50,14 +50,14 @@
             </li>
           </ul>
           <div class="button">
-            
-              <a href="sobre.html" class="button_a">Entrar</a>
+
+            <a href="#" class="button_a" onclick="logar()">Entrar</a>
             
           </div>
           <ul>
             <li>
               <span>Não tem uma conta?</span>
-              <a href="#" class="link">Cadastre-se agora.</a>
+              <a href="sobre.html" class="link">Cadastre-se agora.</a>
             </li>
           </ul>
       </form>
@@ -65,7 +65,33 @@
     </div>
 
   </div>
+  <script>
+    function mostrarSenha(){
+      var inputPass = document.getElementById('password')
+      var bntShowPass = document.getElementById('btn-password')
 
+      if(inputPass.type == 'password'){
+        inputPass.setAttribute('type','text')
+        bntShowPass.classList.replace('bi-eye','bi-eye-slash')
+      }else{
+        inputPass.setAttribute('type','password')
+        bntShowPass.classList.replace('bi-eye-slash','bi-eye')
+      }
+    }
+
+    function logar(){
+
+      var login = document.getElementById('usuario').value;
+      var senha = document.getElementById('password').value;
+
+      if(login == "admin" && senha == "admin"){
+        alert('Login efetuado com Sucesso!');
+        location.href = "sobre.html";
+      }else{
+        alert('Usuário e/ou senha incorretos, tente novamente!')
+      }
+    }
+  </script>
 </body>
 
 </html>
