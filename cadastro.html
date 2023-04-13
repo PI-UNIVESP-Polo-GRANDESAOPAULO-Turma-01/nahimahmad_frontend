@@ -1,95 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="shortcut icon" href="imagens/fav_icon.png" type="image/x-icon" />
-
   <link rel="stylesheet" href="/styles/cadastro.css" />
-  
   <title>Novo Cadastro</title>
-
 </head>
-
 <body>
-<header>
-
-  <nav class="cabecalho_container">
-
-    <img class="logo" src="imagens/logo.png" alt="Logo do colégio Nahim Ahmad">
-
-    <div class="links">
-      <a href="sobre.html" class="cabecalho_sobre">Sobre</a>
-      <a href="cadastro.html" class="cabecalho_cadastro">Cadastrar</a>
-      <a href="buscar.html" class="cabecalho_buscar">Buscar</a>
-      <a href="perfil.html" class="cabecalho_perfil">Perfil</a>
-    </div>
-
-  </nav>
-
-</header>
+  <header>
+    <nav class="cabecalho_container">
+      <img class="logo" src="imagens/logo.png" alt="Logo do colégio Nahim Ahmad">
+      <div class="links">
+        <a href="sobre.html" class="cabecalho_sobre">Sobre</a>
+        <a href="cadastro.html" class="cabecalho_cadastro">Cadastrar</a>
+        <a href="buscar.html" class="cabecalho_buscar">Buscar</a>
+        <a href="perfil.html" class="cabecalho_perfil">Perfil</a>
+      </div>
+    </nav>
+  </header>
   <div class="container">
     <div class="estrutura_1">
       <h3 class="new-register-form-title">
         Novo Cadastro
       </h3>
-      
       <div class="estrutura_2">
         <div class="new-register-form">
-          <form >
+          <form action="include.php" method="post">
             <fieldset class="grupo">
               <div class="campo">
-                <label for="aluno">Aluno</label>
-                <input type="text" placeholder="Nome do Aluno" required>
+                <label for="aluno">Nome do aluno:</label>
+                <input type="text" id="aluno" name="aluno" required>
               </div>
               <div class="campo">
-                <label for="e-mail">E-mail</label>
-                <input type="email" placeholder="emaildoaluno@aqui.com" required>
+                <label for="e-mail">E-mail do aluno:</label>
+                <input type="email" id="e-mail" name="e-mail" required>
               </div>
             </fieldset>
             <fieldset class="grupo">
               <div class="campo">
-                <label for="matrícula">Matrícula</label>
-                <input type="text" placeholder="012456789" required>
+                <label for="matrícula">Número de matrícula:</label>
+                <input type="number" id="matrícula" name="matrícula" required>
               </div>
               <div class="campo">
-                <label for="n_de_serie">Nº de série</label>
-                <input type="text" placeholder="012456789" required>
+                <label for="n_de_serie">Número de série do chromebook:</label>
+                <input type="text" id="n_de_serie" name="n_de_serie" required>
               </div>
             </fieldset>
             <fieldset class="grupo">
               <div class="campo">
-                <label for="dt_entrega">Data de entrega</label>
-                <input type="date" placeholder="DD/MM/AAAA" required>
+                <label for="dt_entrega">Data de entrega:</label>
+                <input type="date" id="dt_entrega" name="dt_entrega" required>
               </div>
               <div class="campo">
-                <label for="conservacao">Conservação</label>
-                <select id="conservacao" required>
-                  <option selected disabled value="">Selecione</option>
-                  <option>Ótimo</option>
-                  <option>Bom</option>
-                  <option>Ruim</option>
+                <label for="conservacao">Estado de conservação:</label>
+                <select id="conservacao" name="conservacao" required>
+                  <option value="" selected disabled>Selecione</option>
+                  <option value="Ótimo">Ótimo</option>
+                  <option value="Bom">Bom</option>
+                  <option value="Regular">Regular</option>
+                  <option value="Ruim">Ruim</option>
                 </select>
               </div>
             </fieldset>
             <div class="button">
-            
-              <a href="#" class="button_a">Cadastrar</a>
-            
-          </div>
+              <input type="submit" value="Cadastrar">
+            </div>
           </form>
         </div>
       </div>
     </div>
-
   </div>
-
-
-<footer class="footer">
-  <div>
+  <footer class="footer">
+    <div>
     <div class="footer_endereco">
       <p>Avenida Esperança, nº 191 - Centro, Guarulhos/SP</p>
     </div>
