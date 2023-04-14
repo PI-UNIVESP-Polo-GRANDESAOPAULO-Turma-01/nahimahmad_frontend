@@ -4,43 +4,46 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
+.navbar-toggler {
+    border-color: rgb(255, 255, 255);
 }
 
-header{
-    width: 100%;
-    height: 90px;
-    background-color:#324572;
-}
-
-.cabecalho_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    color: #ffff;
-    font-size: 20px;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
-    padding: 10px 0 10px 20px;
+    width: 80px;
+    height: 80px;
+    padding: 5px 0 5px 10px;
 }
 
-.cabecalho_sobre, .cabecalho_cadastro, .cabecalho_buscar, .cabecalho_perfil{
+.link-nav{
     color: #ffffff;
     text-decoration: none;
     text-transform: none;
-    padding: 34px 20px 34px 20px;
     font-weight: bold;
 }
 
-.cabecalho_sobre:hover, .cabecalho_cadastro:hover, .cabecalho_buscar:hover, .cabecalho_perfil:hover{
+.link-nav:hover{
     background-color: #f8f8f8;
     color: #324572;
+    font-weight: bold;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.link-nav-dropdown{
+    background-color: #f8f8f8;
+    color: #324572;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.link-nav-dropdown:hover{
+    background-color: #324572;
+    color: #f8f8f8;
     font-weight: bold;
     transition: all 0.4s;
     text-decoration: none;
@@ -94,11 +97,11 @@ header{
     justify-content: space-around;
 }
 
-fieldset {
+fieldset{
     border: 0;
 }
 
-fieldset.grupo .campo {
+fieldset.grupo.campo{
     float: center;
     margin: 5px 10px;
     padding: 0 10px;
@@ -113,7 +116,7 @@ fieldset.grupo .campo {
 
 }
 
-.campo label {
+.campo label{
     margin-bottom: 0.2em;
     color: #000000;
     font-weight: bold;
@@ -189,11 +192,15 @@ input:hover{
     cursor: pointer;
 }
 
-.footer {
+p{
+    margin-bottom: 0;
+}
+
+.footer{
     width: 100%;
     min-height: 100px;
     background: #324572;
-    color: #FFFAD5;
+    color: #ffff;
     font-size: 14px;
     display: flex;
     justify-content: space-around;
@@ -201,13 +208,6 @@ input:hover{
 }
 
 .footer_endereco{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-.footer_direitos{
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -234,10 +234,11 @@ input:hover{
     }
     
     .footer_endereco{
-        margin-top: 50px;
+        text-align: center;
+        margin-top: 30px;
     }
 
     .footer_redes{
-        margin: 50px;
+        margin: 15px 0 25px 0;
     }
 }

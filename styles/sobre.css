@@ -4,41 +4,28 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
+.navbar-toggler {
+    border-color: rgb(255, 255, 255);
 }
 
-header{
-    width: 100%;
-    height: 90px;
-    background-color:#324572;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
-    padding: 10px 0 10px 20px;
+    width: 80px;
+    height: 80px;
+    padding: 5px 0 5px 10px;
 }
 
-.cabecalho_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    color: #ffff;
-    font-size: 20px;
-}
-
-.cabecalho_sobre, .cabecalho_cadastro, .cabecalho_buscar, .cabecalho_perfil{
+.link-nav{
     color: #ffffff;
     text-decoration: none;
     text-transform: none;
-    padding: 34px 20px 34px 20px;
     font-weight: bold;
 }
 
-.cabecalho_sobre:hover, .cabecalho_cadastro:hover, .cabecalho_buscar:hover, .cabecalho_perfil:hover{
+.link-nav:hover{
     background-color: #f8f8f8;
     color: #324572;
     font-weight: bold;
@@ -46,49 +33,31 @@ header{
     text-decoration: none;
 }
 
-.container{
-    width: 100%;
-    height: 55vh;
+.link-nav-dropdown{
     background-color: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    padding-bottom: 50px;
+    color: #324572;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: bold;
 }
 
-.estrutura_1{
-    width: 55%;
-    height: 100%;
-    
+.link-nav-dropdown:hover{
+    background-color: #324572;
+    color: #f8f8f8;
+    font-weight: bold;
+    transition: all 0.4s;
+    text-decoration: none;
 }
 
-.about{
-    font-weight: 800;
-    padding: 20px 0 10px 0;
+p{
+    margin-bottom: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer {
+.footer{
     width: 100%;
     min-height: 100px;
-    margin-top: 50px;
     background: #324572;
-    color: #FFFAD5;
+    color: #ffff;
     font-size: 14px;
     display: flex;
     justify-content: space-around;
@@ -96,13 +65,6 @@ header{
 }
 
 .footer_endereco{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-.footer_direitos{
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -129,10 +91,11 @@ header{
     }
     
     .footer_endereco{
-        margin-top: 50px;
+        text-align: center;
+        margin-top: 30px;
     }
 
     .footer_redes{
-        margin: 50px;
+        margin: 15px 0 25px 0;
     }
 }
