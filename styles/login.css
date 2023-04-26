@@ -5,84 +5,63 @@
 }
 
 body{
-    width: 100%;
-    height: 100vh;
     background: linear-gradient(
         to bottom,
         #324572 0% 40%,
-        #f8f8f8 40% 100%);
+        #f1f1f1 40% 500%);
     background-repeat: no-repeat;
 }
 
 .container-login{
-    margin: 60px auto;
-    height: 50%;
-    width: 40%;
-    background-color:#ffff;
+    background-color: #ffff;
     border-radius: 20px;
     box-shadow: 0px 2px 6px #888888;
-    text-align: center;
+}
+
+.imagem{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
 }
 
 .login-form-title{
     font-size: 30px;
     padding-bottom: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
-.imagem{
-    padding: 20px;
-    width: 110px;
-    height: 110px;
-}
-
-.card-content-area{
-    display: block;
-    margin: auto;
-    position: relative;
-}
-
-label{
+.label{
     font-size: 20px;
     font-weight: bold;
-    display: block;
-    padding: 15px 0px 10px;
 }
 
-input{
-    width: 60%;
-    line-height: 40px;
-    font-size: 15px;
+.input{
     outline: none;
-    border: transparent;
     border-radius: 15px;
     box-shadow: 0px 2px 6px #888888;
     padding: 0px 30px 0px 20px;
 }
 
-input:hover{
+.input:hover{
     border: transparent;
     box-shadow: 0px 1px 10px #324572;
 }
 
-div i{
-    font-size: 35px;
+.eye{
+    font-size: 34px;
     cursor: pointer;
     position: absolute;
-    right: 18%;
+    right: 10%;
+    top: 66%;
     color: #000000;
 }
 
-.button{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.remember{
+    font-size: 15px;
 }
 
 .button_a{
-    padding: 1% 20%;
-    margin: 10px 10px;
     border-radius: 15px;
     border: 2px solid #0098DA;
     color: #ffff;
@@ -96,26 +75,7 @@ div i{
 
 .button_a:hover {
     background-color: #ffff;
+    border: 2px solid #0098DA;
     color: #0098DA;
     cursor: pointer;
-}
-
-ul li{
-    font-size: 13px;
-    padding: 15px;
-    list-style-type: none;
-}
-
-a{
-    color: #0098DA;
-    transition: 0.4s;
-}
-
-a:focus{
-    outline: none;
-}
-
-a:hover{
-    text-decoration: none;
-    color: #324572;
 }
