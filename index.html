@@ -20,72 +20,72 @@
 </head>
 
 <body>
-  <div class="container">
-      <div class="row justify-content-center align-items-center" style="height: 100vh;">
-          <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 pt-4 pb-5 pr-5 pl-5 container-login">
-              <div class="row justify-content-center">
-                  <img class="imagem" src="/imagens/logo.png" alt="Logo do colégio Nahim Ahmad">
-              </div>
-              <div class="row justify-content-center">
-                  <div class="col-autos login-form-title mt-3 mb-3">
-                      Faça o Login
-                  </div>
-              </div>
-              <form>
-                  <div class="form-group">
-                      <label for="usuario" class="row justify-content-center label">Usuário</label>
-                      <input type="usuario" class="form-control input" id="usuario" aria-describedby="emailHelp" placeholder="Digite seu usuário">
-                  </div>
-                  <div class="form-group mb-2">
-                      <label for="password" class="row justify-content-center label">Senha</label>
-                      <input type="password" class="form-control input" id="password" placeholder="Digite sua senha">
-                      <i class="bi bi-eye eye" id="btn-password" onclick="mostrarSenha()"></i>
-                  </div>
-                  <div class="row mb-3">
-                      <div class="col">
-                          <div class="form-check">
-                              <input type="checkbox" name="remember" id="remember" class="form-check-input">
-                              <label for="remember" class="form-check-label remember">Manter conectado</label>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col">
-                          <a href="#" class="btn btn-primary w-100 button_a" onclick="logar()">Entrar</a>
-                      </div>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-12 col-md-8 col-lg-7 col-xl-6 col-xxl-5 pt-4 pb-5 pr-5 pl-5 container-login">
+                <div class="row justify-content-center">
+                    <img class="imagem" src="/imagens/logo.png" alt="Logo do colégio Nahim Ahmad">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-autos login-form-title mt-3 mb-3">
+                        Faça o Login
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="usuario" class="row justify-content-center label">Usuário</label>
+                        <input type="usuario" class="form-control input" id="usuario" aria-describedby="emailHelp" placeholder="Digite seu usuário">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="password" class="row justify-content-center label">Senha</label>
+                        <input type="password" class="form-control input" id="password" placeholder="Digite sua senha">
+                        <i class="bi bi-eye eye" id="btn-password" onclick="mostrarSenha()"></i>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="form-check">
+                                <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                                <label for="remember" class="form-check-label remember">Manter conectado</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="btn btn-primary w-100 button_a" onclick="logar()">Entrar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
-  <script>
-      function mostrarSenha(){
-          var inputPass = document.getElementById('password')
-          var bntShowPass = document.getElementById('btn-password')
+    <script>
+        function mostrarSenha(){
+            var inputPass = document.getElementById('password')
+            var bntShowPass = document.getElementById('btn-password')
 
-          if(inputPass.type == 'password'){
-              inputPass.setAttribute('type','text')
-              bntShowPass.classList.replace('bi-eye','bi-eye-slash')
-          }else{
-              inputPass.setAttribute('type','password')
-              bntShowPass.classList.replace('bi-eye-slash','bi-eye')
-          }
-      }
-      
-      function logar(){
-      
-          var login = document.getElementById('usuario').value;
-          var senha = document.getElementById('password').value;
-      
-          if(login == "admin" && senha == "admin"){
-              alert('Login efetuado com Sucesso!');
-              location.href = "buscar.php";
-          }else{
-              alert('Usuário e/ou senha incorretos, tente novamente!')
-          }
-      }
-  </script>
+            if(inputPass.type == 'password'){
+                inputPass.setAttribute('type','text')
+                bntShowPass.classList.replace('bi-eye','bi-eye-slash')
+            }else{
+                inputPass.setAttribute('type','password')
+                bntShowPass.classList.replace('bi-eye-slash','bi-eye')
+            }
+        }
+        
+        function logar(){
+        
+            var login = document.getElementById('usuario').value;
+            var senha = document.getElementById('password').value;
+        
+            if(login == "admin" && senha == "admin"){
+                alert('Login efetuado com Sucesso!');
+                location.href = "buscar.php";
+            }else{
+                alert('Usuário e/ou senha incorretos, tente novamente!')
+            }
+        }
+    </script>
 </body>
 </html>
