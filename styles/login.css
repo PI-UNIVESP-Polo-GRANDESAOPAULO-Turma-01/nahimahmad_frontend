@@ -57,6 +57,14 @@ body{
     color: #000000;
 }
 
+@media (max-width: 450px){
+
+    .eye{
+        right: 15%;
+    }
+
+}
+
 .remember{
     font-size: 15px;
 }
